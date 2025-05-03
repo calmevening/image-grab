@@ -5,6 +5,8 @@ I've used these scripts to extract files from old Android games before.
 
 You are generally free to take the code and put in the magic number of some other file format, or even fork this repo and add case handling (which I'm too lazy to add).
 
+These scripts are functionally similar to this [BMS script](https://github.com/calmevening/evangelion-android-quickbms-script/) I asked for back in 2023.
+
 ## Usage
 ``python png.py filename.extension``<br/>
 ``python jpg.py filename.extension``<br/>
