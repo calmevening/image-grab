@@ -1,6 +1,8 @@
 # image-grab
 Two scripts I've used to grab .png and .jpg files from archives, binaries, and other types of files. For effectiveness, I fixed up my code so that it can take a filename as an argument instead of having to manually edit in what file you want the script to work with.
 
+I've used these scripts to extract files from old Android games before.
+
 You are generally free to take the code and put in the magic number of some other file format, or even fork this repo and add case handling (which I'm too lazy to add).
 
 ## Usage
