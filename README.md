@@ -6,7 +6,7 @@ I've used these scripts to extract files from old Android games before.
 You are generally free to take the code and put in the magic number of some other file format, or even fork this repo and add case handling (which I'm too lazy to add).
 
 ## Usage
-``python png.py filename.extension``
+``python png.py filename.extension``<br/>
 ``python jpg.py filename.extension``
 
 Note: python is important as the script breaks without it
