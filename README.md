@@ -20,3 +20,5 @@ The png script is guaranteed to always work.
 The jpg script is hit or miss as it does not have case handling, and thus only targets the first three hex chars of .jpg's magic numbers (``FF D8 FF``). This means that using this script may generate a lot of false positive .jpg files. Might add case handling in the future so it can target multiple different types of .jpg files.
 
 The bmp script has only ever been used on binary files from 1990s-2000s era software. Since the magic number of bitmaps (``42 4D``) is too short and too common, I recommend only using these if you know for certain the thing you're trying to extract uses .bmp files, otherwise the script might generate a lot of false positive files.
+
+bmp_corrected.py is an alternate version of the bmp script that has increased effectivity from the original bmp script, at the cost that it might not be able to target all types of bmp files. It checks between four magic numbers instead of just one, and this can be expanded.
