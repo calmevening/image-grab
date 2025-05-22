@@ -18,7 +18,7 @@ def extract_bmp(input_file, output_dir):
             img_file.write(image_data)
         print(f'Image {i+1} extracted and saved as {output_file}')
 
-input_file = sysargv[1]
+input_file = sys.argv[1]
 output_dir = 'output_images/'
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
