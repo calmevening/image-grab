@@ -7,10 +7,13 @@ You are generally free to take the code and put in the magic number of some othe
 
 These scripts are functionally similar to this [BMS script](https://github.com/calmevening/evangelion-android-quickbms-script/) I asked for back in 2023.
 
+1-8-2026: Added dds.py, for [.dds image files](https://en.wikipedia.org/wiki/DirectDraw_Surface).
+
 ## Usage
 ``python png.py filename.extension``<br/>
 ``python jpg.py filename.extension``<br/>
-``python bmp.py filename.extension``
+``python bmp.py filename.extension``<br/>
+``python dds.py filename.extension``
 
 Note: python is important as the script breaks without it
 
