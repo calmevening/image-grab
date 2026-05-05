@@ -8,12 +8,14 @@ You are generally free to take the code and put in the magic number of some othe
 These scripts are functionally similar to this [BMS script](https://github.com/calmevening/evangelion-android-quickbms-script/) I asked for back in 2023.
 
 1-8-2026: Added dds.py, for [.dds image files](https://en.wikipedia.org/wiki/DirectDraw_Surface).
+5-5-2026: Added ogg.py, for .ogg audio files.
 
 ## Usage
 ``python png.py filename.extension``<br/>
 ``python jpg.py filename.extension``<br/>
 ``python bmp.py filename.extension``<br/>
-``python dds.py filename.extension``
+``python dds.py filename.extension``<br/>
+``python ogg.py filename.extension``
 
 Note: python is important as the script breaks without it
 
@@ -25,3 +27,5 @@ The jpg script is hit or miss as it does not have case handling, and thus only t
 The bmp script has only ever been used on binary files from 1990s-2000s era software. Since the magic number of bitmaps (``42 4D``) is too short and too common, I recommend only using these if you know for certain the thing you're trying to extract uses .bmp files, otherwise the script might generate a lot of false positive files. Another known issue with this script is it splits .bmp files into several parts by accident by falsely matching the magic numbers.
 
 bmp_corrected.py is an alternate version of the bmp script that has increased effectivity from the original bmp script, at the cost that it might not be able to target all types of bmp files. It checks between four magic numbers instead of just one, and this can be expanded.
+
+The ogg script should work all the time, like the png script.
